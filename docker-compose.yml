@@ -1,0 +1,35 @@
+version: "3.4"
+
+services:
+  scjcalculo-api:
+    image: scjcalculoapi
+    build:
+      context: .
+      dockerfile: src/SCJ.Calculo.API/Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - sjn-network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+      - URLTaxaAPI=http://scjtaxa-api:5002
+    depends_on:
+      - "scjtaxa-api"
+
+  scjtaxa-api:
+    image: scjtaxaapi
+    build:
+      context: .
+      dockerfile: src/SCJ.Taxa.API/Dockerfile
+    ports:
+      - "5002:5002"
+    networks:
+      - sjn-network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5002
+
+networks:
+  sjn-network:
+    external: true

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCJ.Taxa.API", "src\SCJ.Taxa.API\SCJ.Taxa.API.csproj", "{1A04D054-0891-40DB-A7B8-FDDBBC3D4A39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCJ.Calculo.API", "src\SCJ.Calculo.API\SCJ.Calculo.API.csproj", "{CC138040-E297-49B2-9176-F3237A86898C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14748591-7371-496C-83E6-FC430A8740DC}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{5D6AE3A1-53F5-4412-96F4-A20BCB8C3099}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCJ.Taxa.Tests", "tests\SCJ.Taxa.Tests\SCJ.Taxa.Tests.csproj", "{0BA199E8-4ADC-42E2-83F2-7AF07228855E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCJ.Calculo.Tests", "tests\SCJ.Calculo.Tests\SCJ.Calculo.Tests.csproj", "{1FA57987-4C14-4399-8E15-422792EE76D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A04D054-0891-40DB-A7B8-FDDBBC3D4A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A04D054-0891-40DB-A7B8-FDDBBC3D4A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A04D054-0891-40DB-A7B8-FDDBBC3D4A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A04D054-0891-40DB-A7B8-FDDBBC3D4A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC138040-E297-49B2-9176-F3237A86898C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC138040-E297-49B2-9176-F3237A86898C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC138040-E297-49B2-9176-F3237A86898C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC138040-E297-49B2-9176-F3237A86898C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA199E8-4ADC-42E2-83F2-7AF07228855E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA199E8-4ADC-42E2-83F2-7AF07228855E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA199E8-4ADC-42E2-83F2-7AF07228855E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA199E8-4ADC-42E2-83F2-7AF07228855E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA57987-4C14-4399-8E15-422792EE76D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA57987-4C14-4399-8E15-422792EE76D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA57987-4C14-4399-8E15-422792EE76D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA57987-4C14-4399-8E15-422792EE76D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BA199E8-4ADC-42E2-83F2-7AF07228855E} = {5D6AE3A1-53F5-4412-96F4-A20BCB8C3099}
+		{1FA57987-4C14-4399-8E15-422792EE76D3} = {5D6AE3A1-53F5-4412-96F4-A20BCB8C3099}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4359C5D6-4096-4F65-92AC-C3013DE5E605}
+	EndGlobalSection
+EndGlobal
